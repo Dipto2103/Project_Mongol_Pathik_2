@@ -8,7 +8,7 @@ import {
   calculateDistanceToRoverTraverse
 } from '../data/roverTraverses';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'http://localhost:8000';
 
 export interface BackendStatus {
   isOnline: boolean;
@@ -151,7 +151,7 @@ export async function planRouteUnified(
 
   const result = planTerrainAwareRoute(start, destination, activeGrid, {
     walkingSpeedKmh,
-    maxAllowedSlopeDeg
+    maxAllowedSlopeDeg: maxSlopeDeg
   });
 
   if (result.success && result.route) {

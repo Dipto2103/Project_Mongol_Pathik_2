@@ -122,5 +122,50 @@ export const NASA_DATA_SOURCES: Record<string, DataSourceMetadata> = {
       'Sparse targeted spatial coverage (less than 3% of Martian surface).',
       'Stereo correlation errors in uniform sandy or shadowed terrains.'
     ]
+  },
+  mars_trek_portal: {
+    id: 'mars_trek_portal',
+    name: 'NASA Mars Trek Planetary Exploration Portal',
+    provider: 'NASA Solar System Treks Project / JPL-Caltech',
+    sourceUrl: 'https://trek.nasa.gov/mars/index.html',
+    datasetType: 'WMTS Tile Service',
+    coordinateReferenceSystem: 'IAU2000:Mars (Equirectangular / Polar Stereographic)',
+    spatialResolution: 'Multi-resolution global and targeted orbital layers',
+    temporalCoverage: 'Multi-mission synthetic repository (Viking to present)',
+    attribution: 'NASA Solar System Treks / Jet Propulsion Laboratory',
+    knownLimitations: [
+      'Visual tile service delivers shaded relief and optical mosaics; numerical DEM processing required separately for mathematical slope calculation.',
+      'Tile streaming subject to network latency.'
+    ]
+  },
+  curiosity_places: {
+    id: 'curiosity_places',
+    name: 'Curiosity Rover PLACES Position & Localization Archive',
+    provider: 'NASA Planetary Data System (PDS) Geosciences Node',
+    sourceUrl: 'https://pds.nasa.gov/ds-view/pds/viewProfile.jsp?dsid=MSL-M-ROVER-6-RDR-PLACES-V1.0',
+    datasetType: 'PDS Archive',
+    coordinateReferenceSystem: 'Mars Local Rover Frame / Areocentric coordinates',
+    spatialResolution: 'Centimeter-level drive endpoint localization',
+    temporalCoverage: 'Sol 0 to Sol 4120+ (Active Mission)',
+    attribution: 'NASA / JPL-Caltech / PDS Geosciences Node (MSL-M-ROVER-6-RDR-PLACES-V1.0)',
+    knownLimitations: [
+      'Historical robotic path driven by 6-wheel rocker-bogie vehicle; does NOT certify human astronaut traversability.',
+      'Waypoints biased by mission sampling objectives and steep mineral vein outcrop targets.'
+    ]
+  },
+  perseverance_traverse: {
+    id: 'perseverance_traverse',
+    name: 'Mars 2020 Perseverance Traverse Localization Catalog',
+    provider: 'NASA JPL / Mars 2020 Science Operations Team',
+    sourceUrl: 'https://mars.nasa.gov/mars2020/mission/science/traverse-map/',
+    datasetType: 'Instrument Telemetry',
+    coordinateReferenceSystem: 'Areocentric / Jezero Crater Site Frame',
+    spatialResolution: 'Sub-meter drive endpoint localization',
+    temporalCoverage: 'Sol 0 to Sol 1050+ (Active Mission)',
+    attribution: 'NASA / JPL-Caltech / Mars 2020 Team',
+    knownLimitations: [
+      'Robotic auto-nav corridor across Jezero delta; does not represent unassisted suited human safety.',
+      'Subject to localized coordinate updates as rover traverses unconsolidated sand ripples.'
+    ]
   }
 };

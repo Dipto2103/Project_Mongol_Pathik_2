@@ -9,6 +9,7 @@ import { MapLayers } from '../components/map/MapLayers';
 import { RoutePlanner } from '../components/route/RoutePlanner';
 import { RouteComparison } from '../components/route/RouteComparison';
 import { MissionSummary } from '../components/route/MissionSummary';
+import { RoverExplorer } from '../components/route/RoverExplorer';
 import { SciencePanel } from '../components/science/SciencePanel';
 import { HazardPanel } from '../components/hazards/HazardPanel';
 import { EnvironmentPanel } from '../components/environment/EnvironmentPanel';
@@ -198,6 +199,14 @@ export const App: React.FC = () => {
                 route={primaryRoute}
                 hazardAssessment={hazardAssessment}
                 nearbyScienceTargets={nearbyScienceTargets}
+              />
+            )}
+
+            {activeTab === 'rover-explorer' && (
+              <RoverExplorer
+                onCenterMap={handleCenterMap}
+                onSetStart={handleSetStart}
+                onSetDestination={handleSetDestination}
               />
             )}
 

@@ -10,7 +10,8 @@ import {
   CloudSun,
   Layers,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  Footprints
 } from 'lucide-react';
 
 export type ActiveTab =
@@ -18,6 +19,7 @@ export type ActiveTab =
   | 'route-plan'
   | 'route-compare'
   | 'mission-brief'
+  | 'rover-explorer'
   | 'terrain'
   | 'hazards'
   | 'science'
@@ -74,6 +76,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
           label: 'Mission Briefing',
           icon: FileText,
           highlight: hasActiveRoute
+        },
+        {
+          id: 'rover-explorer',
+          label: 'Rover Explorer',
+          icon: Footprints,
+          badge: 'PDS'
         }
       ]
     },

@@ -13,7 +13,8 @@ import {
   Compass,
   Mountain,
   CheckCircle2,
-  ExternalLink
+  ExternalLink,
+  Footprints
 } from 'lucide-react';
 import {
   ResponsiveContainer,
@@ -85,6 +86,16 @@ export const MissionSummary: React.FC<MissionSummaryProps> = ({
         mission: s.mission,
         coordinates: s.coordinates
       })),
+      roverProximityContext: route.roverProximity
+        ? {
+            nearestRover: route.roverProximity.nearestRover,
+            minDistanceKm: route.roverProximity.minDistanceKm,
+            closestSol: route.roverProximity.closestSol,
+            closestSite: route.roverProximity.closestSite,
+            mobilityCaveat:
+              'Historical rover paths are robotic reference data only. Not verified human astronaut EVA corridors.'
+          }
+        : null,
       disclaimer:
         'ARES Research Prototype — Output is an educational and mission-planning simulation. Not certified for operational astronaut survival or life-critical navigation decisions.'
     };
@@ -300,6 +311,62 @@ export const MissionSummary: React.FC<MissionSummaryProps> = ({
                 <span className="text-mars-sand text-[11px]">{formatElevation(sci.elevationMeters)}</span>
               </div>
             ))}
+          </div>
+        </div>
+      )}
+
+      {/* Historical Rover Traverse Context */}
+      {route.roverProximity && (
+        <div className="p-4 rounded-lg bg-mars-surface border border-mars-border space-y-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Footprints className="w-4 h-4 text-sky-400" />
+              <span className="font-mono text-xs font-bold text-white uppercase">
+                Historical Rover Traverse Context
+              </span>
+            </div>
+            <span
+              className={`text-[10px] font-mono px-2 py-0.5 rounded font-bold ${
+                route.roverProximity.minDistanceKm <= 1.0
+                  ? 'bg-sky-950 text-sky-300'
+                  : 'bg-slate-800 text-slate-300'
+              }`}
+            >
+              {route.roverProximity.minDistanceKm <= 1.0
+                ? '≈ NEAR ROVER PATH'
+                : 'DIVERGES FROM ROVER'}
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 gap-2 text-xs font-mono">
+            <div className="p-2.5 rounded bg-mars-darkest border border-mars-border/70">
+              <div className="text-[10px] text-mars-muted uppercase">Nearest Rover</div>
+              <div className="text-white font-bold text-sm mt-0.5">
+                {route.roverProximity.nearestRover}
+              </div>
+              <div className="text-[10px] text-mars-muted mt-0.5 truncate">
+                Site: {route.roverProximity.closestSite}
+              </div>
+            </div>
+            <div className="p-2.5 rounded bg-mars-darkest border border-mars-border/70">
+              <div className="text-[10px] text-mars-muted uppercase">Closest Approach</div>
+              <div className="text-sky-400 font-bold text-sm mt-0.5">
+                {route.roverProximity.minDistanceKm.toFixed(2)} km
+              </div>
+              <div className="text-[10px] text-mars-muted mt-0.5">
+                Recorded at Sol {route.roverProximity.closestSol}
+              </div>
+            </div>
+          </div>
+
+          {/* Operational Mobility Caveat */}
+          <div className="p-2.5 rounded bg-amber-950/20 border border-amber-500/30 text-[11px] text-mars-muted space-y-1">
+            <div className="font-mono font-bold text-amber-400 text-[10px] uppercase flex items-center gap-1.5">
+              <span>Astronaut vs Rover Mobility Distinction</span>
+            </div>
+            <p className="leading-relaxed">
+              Historical rover paths (Curiosity / Perseverance) reflect robotic 6-wheel rocker-bogie capabilities and scientific investigation waypoints. They are NOT certified as safe or walk-able paths for suited human EVA exploration. Terrain slope and obstacles must be independently evaluated.
+            </p>
           </div>
         </div>
       )}
