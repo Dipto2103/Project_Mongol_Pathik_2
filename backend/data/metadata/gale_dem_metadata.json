@@ -1,0 +1,11 @@
+{
+  "id": "gale-crater-dem",
+  "name": "Gale Crater & Mount Sharp Traverse DTM",
+  "resolutionMeters": 280.0,
+  "minLat": -4.92,
+  "maxLat": -4.5,
+  "minLon": 137.3,
+  "maxLon": 137.52,
+  "elevationUnits": "meters relative to Mars areoid",
+  "noDataRepresentation": "null (treated as uncertain and penalized)"
+}

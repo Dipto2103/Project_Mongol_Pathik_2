@@ -1,0 +1,258 @@
+{
+  "type": "FeatureCollection",
+  "name": "Perseverance Historical Rover Traverse",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "perseverance-historical-traverse-line",
+      "properties": {
+        "rover": "Perseverance",
+        "mission": "Mars 2020",
+        "dataset": "NASA Mars 2020 Traverse Localization Catalog",
+        "recordType": "historical_traverse_line",
+        "totalDistanceKm": 8.48,
+        "solRange": "Sol 0 to Sol 1050",
+        "startSite": "Octavia E. Butler Landing",
+        "currentSite": "Neretva Vallis Inflow Channel",
+        "illustrative": false,
+        "scientificCaveat": "Traverse reflects robotic rover objectives; does not certify human astronaut traversability."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.4508,
+            18.4447,
+            -2570
+          ],
+          [
+            77.441,
+            18.438,
+            -2565
+          ],
+          [
+            77.435,
+            18.431,
+            -2560
+          ],
+          [
+            77.421,
+            18.4375,
+            -2535
+          ],
+          [
+            77.413,
+            18.429,
+            -2510
+          ],
+          [
+            77.408,
+            18.426,
+            -2485
+          ],
+          [
+            77.387,
+            18.439,
+            -2460
+          ],
+          [
+            77.365,
+            18.452,
+            -2435
+          ],
+          [
+            77.332,
+            18.481,
+            -2390
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "perseverance-sol-0",
+      "properties": {
+        "rover": "Perseverance",
+        "sol": 0,
+        "site": "Octavia E. Butler Landing",
+        "elevationMeters": -2570,
+        "notes": "Touchdown site on Jezero Crater floor",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4508,
+          18.4447,
+          -2570
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "perseverance-sol-120",
+      "properties": {
+        "rover": "Perseverance",
+        "sol": 120,
+        "site": "S\u00e9\u00edtah Scarp Overlook",
+        "elevationMeters": -2565,
+        "notes": "Survey of active ripple terrain",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.441,
+          18.438,
+          -2565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "perseverance-sol-210",
+      "properties": {
+        "rover": "Perseverance",
+        "sol": 210,
+        "site": "South S\u00e9\u00edtah (Brac)",
+        "elevationMeters": -2560,
+        "notes": "Igneous olivine-cumulate bedrock coring",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.435,
+          18.431,
+          -2560
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "perseverance-sol-380",
+      "properties": {
+        "rover": "Perseverance",
+        "sol": 380,
+        "site": "Hawksbill Gap",
+        "elevationMeters": -2535,
+        "notes": "Delta front entrance corridor",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.421,
+          18.4375,
+          -2535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "perseverance-sol-470",
+      "properties": {
+        "rover": "Perseverance",
+        "sol": 470,
+        "site": "Cape Nukshak Base",
+        "elevationMeters": -2510,
+        "notes": "Ascending delta front talus ramp",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.413,
+          18.429,
+          -2510
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "perseverance-sol-580",
+      "properties": {
+        "rover": "Perseverance",
+        "sol": 580,
+        "site": "Wildcat Ridge",
+        "elevationMeters": -2485,
+        "notes": "Sulfate-rich mudstones containing organic molecules",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.408,
+          18.426,
+          -2485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "perseverance-sol-720",
+      "properties": {
+        "rover": "Perseverance",
+        "sol": 720,
+        "site": "Tenby Delta Top",
+        "elevationMeters": -2460,
+        "notes": "Curvilinear topset river channel beds",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.387,
+          18.439,
+          -2460
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "perseverance-sol-890",
+      "properties": {
+        "rover": "Perseverance",
+        "sol": 890,
+        "site": "Mandu Wall",
+        "elevationMeters": -2435,
+        "notes": "Upper fan mega-conglomerates",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.365,
+          18.452,
+          -2435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "perseverance-sol-1050",
+      "properties": {
+        "rover": "Perseverance",
+        "sol": 1050,
+        "site": "Neretva Vallis Inflow Channel",
+        "elevationMeters": -2390,
+        "notes": "Gorge where river breached western crater rim",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.332,
+          18.481,
+          -2390
+        ]
+      }
+    }
+  ]
+}

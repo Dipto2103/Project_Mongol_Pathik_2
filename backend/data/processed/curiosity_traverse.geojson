@@ -1,0 +1,483 @@
+{
+  "type": "FeatureCollection",
+  "name": "Curiosity Historical Rover Traverse",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "curiosity-historical-traverse-line",
+      "properties": {
+        "rover": "Curiosity",
+        "mission": "Mars Science Laboratory (MSL)",
+        "dataset": "NASA Planetary Data System (PDS) PLACES Archive (MSL-M-ROVER-6-RDR-PLACES-V1.0)",
+        "recordType": "historical_traverse_line",
+        "totalDistanceKm": 22.75,
+        "solRange": "Sol 0 to Sol 4120",
+        "startSite": "Bradbury Landing",
+        "currentSite": "Gediz Vallis Ridge",
+        "illustrative": false,
+        "scientificCaveat": "Traverse reflects robotic rover objectives; does not certify human astronaut traversability."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            137.4417,
+            -4.5895,
+            -4501
+          ],
+          [
+            137.458,
+            -4.5932,
+            -4512
+          ],
+          [
+            137.4725,
+            -4.5901,
+            -4520
+          ],
+          [
+            137.468,
+            -4.592,
+            -4516
+          ],
+          [
+            137.449,
+            -4.611,
+            -4508
+          ],
+          [
+            137.4245,
+            -4.6285,
+            -4495
+          ],
+          [
+            137.412,
+            -4.639,
+            -4488
+          ],
+          [
+            137.382,
+            -4.672,
+            -4462
+          ],
+          [
+            137.375,
+            -4.685,
+            -4445
+          ],
+          [
+            137.368,
+            -4.715,
+            -4410
+          ],
+          [
+            137.362,
+            -4.741,
+            -4360
+          ],
+          [
+            137.37,
+            -4.752,
+            -4295
+          ],
+          [
+            137.378,
+            -4.761,
+            -4250
+          ],
+          [
+            137.395,
+            -4.782,
+            -4205
+          ],
+          [
+            137.381,
+            -4.815,
+            -4130
+          ],
+          [
+            137.372,
+            -4.845,
+            -4020
+          ],
+          [
+            137.366,
+            -4.862,
+            -3950
+          ],
+          [
+            137.361,
+            -4.882,
+            -3890
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-0",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 0,
+        "site": "Bradbury Landing",
+        "elevationMeters": -4501,
+        "notes": "Touchdown site in northern Gale Crater",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.4417,
+          -4.5895,
+          -4501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-60",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 60,
+        "site": "Rocknest",
+        "elevationMeters": -4512,
+        "notes": "First windblown sand scoop for CheMin/SAM",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.458,
+          -4.5932,
+          -4512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-125",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 125,
+        "site": "Yellowknife Bay (John Klein)",
+        "elevationMeters": -4520,
+        "notes": "Mudstone drill site; confirmed ancient habitable lake",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.4725,
+          -4.5901,
+          -4520
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-270",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 270,
+        "site": "Point Lake",
+        "elevationMeters": -4516,
+        "notes": "Cross-bedded sandstone units",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.468,
+          -4.592,
+          -4516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-395",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 395,
+        "site": "Darwin Outcrop",
+        "elevationMeters": -4508,
+        "notes": "Conglomerate gravel pavement",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.449,
+          -4.611,
+          -4508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-540",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 540,
+        "site": "Dingo Gap",
+        "elevationMeters": -4495,
+        "notes": "Sand dune ridge crossing",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.4245,
+          -4.6285,
+          -4495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-630",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 630,
+        "site": "The Kimberley",
+        "elevationMeters": -4488,
+        "notes": "Major sandstone buttress intersection",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.412,
+          -4.639,
+          -4488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-750",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 750,
+        "site": "Pahrump Hills",
+        "elevationMeters": -4462,
+        "notes": "Basal boundary layer of Mount Sharp",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.382,
+          -4.672,
+          -4462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-940",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 940,
+        "site": "Garden City",
+        "elevationMeters": -4445,
+        "notes": "Dense mineral vein network",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.375,
+          -4.685,
+          -4445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-1180",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 1180,
+        "site": "Bagnold Dunes North",
+        "elevationMeters": -4410,
+        "notes": "Active dark barchan dune studies",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.368,
+          -4.715,
+          -4410
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-1310",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 1310,
+        "site": "Naukluft Plateau",
+        "elevationMeters": -4360,
+        "notes": "Rugged bedrock fractured terrain",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.362,
+          -4.741,
+          -4360
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-1550",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 1550,
+        "site": "Murray Buttes",
+        "elevationMeters": -4295,
+        "notes": "Eroded sandstone mesas and towers",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.37,
+          -4.752,
+          -4295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-1810",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 1810,
+        "site": "Vera Rubin Ridge (Hematite)",
+        "elevationMeters": -4250,
+        "notes": "Prominent crystalline hematite ridge",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.378,
+          -4.761,
+          -4250
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-2300",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 2300,
+        "site": "Glen Torridon (Clay Unit)",
+        "elevationMeters": -4205,
+        "notes": "Clay-bearing sedimentary trough",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.395,
+          -4.782,
+          -4205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-2720",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 2720,
+        "site": "Greenheugh Pediment Base",
+        "elevationMeters": -4130,
+        "notes": "Steep slope ascent onto pediment cap",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.381,
+          -4.815,
+          -4130
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-3250",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 3250,
+        "site": "Mount Sharp Sulfate Unit",
+        "elevationMeters": -4020,
+        "notes": "Transition from clay to magnesium sulfate",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.372,
+          -4.845,
+          -4020
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-3650",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 3650,
+        "site": "Marker Band Valley",
+        "elevationMeters": -3950,
+        "notes": "Rippled rock textures formed by ancient waves",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.366,
+          -4.862,
+          -3950
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "curiosity-sol-4120",
+      "properties": {
+        "rover": "Curiosity",
+        "sol": 4120,
+        "site": "Gediz Vallis Ridge",
+        "elevationMeters": -3890,
+        "notes": "Debris flow channel recording late-stage water surges",
+        "recordType": "rover_drive_endpoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.361,
+          -4.882,
+          -3890
+        ]
+      }
+    }
+  ]
+}

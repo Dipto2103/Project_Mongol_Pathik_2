@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-10-10T15:50:00Z",
+  "pipelineVersion": "ARES_2.0_PDS_INGESTION",
+  "rovers": [
+    {
+      "id": "curiosity",
+      "name": "Curiosity (MSL)",
+      "region": "Gale Crater (Mount Sharp / Aeolis Mons)",
+      "pdsSource": "https://pds.nasa.gov/ds-view/pds/viewProfile.jsp?dsid=MSL-M-ROVER-6-RDR-PLACES-V1.0",
+      "geojsonFile": "curiosity_traverse.geojson",
+      "totalDistanceKm": 22.75,
+      "waypointCount": 18
+    },
+    {
+      "id": "perseverance",
+      "name": "Perseverance (Mars 2020)",
+      "region": "Jezero Crater (Western Fan Delta)",
+      "pdsSource": "https://mars.nasa.gov/mars2020/mission/science/traverse-map/",
+      "geojsonFile": "perseverance_traverse.geojson",
+      "totalDistanceKm": 8.48,
+      "waypointCount": 9
+    }
+  ]
+}
